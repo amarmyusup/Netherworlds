@@ -1,7 +1,7 @@
 {
-    "name": "Aine-Bot",
-    "version": "07.06.98",
-    "description": "Customizable WhatsApp Bot",
+    "name": "A M Y",
+    "version": "13.07.22",
+    "description": "Netherworlds WhatsApp Bot",
     "depecrated": false,
     "main": "index.js",
     "directories": {
@@ -27,16 +27,16 @@
         "MD",
         "baileys-md"
     ],
-    "homepage": "https://github.com/Aiinne",
+    "homepage": "https://github.com/amarmyusup/",
     "author": {
-        "name": "Muhammad Ridwan Reynaldy"
+        "name": "Amar Maulana Yusup"
     },
     "repository": {
         "type": "git",
-        "url": "git+https://github.com/Aiinne"
+        "url": "git+https://github.com/amarmyusup/"
     },
     "bugs": {
-        "url": "https://github.com/Aiinne"
+        "url": "https://github.com/amarmyusup/"
     },
     "license": "GPL-3.0-or-later",
     "dependencies": {
