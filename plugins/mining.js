@@ -1,7 +1,7 @@
 let { MessageType } = require('@adiwajshing/baileys')
 
-const miningxp = 5000
-const miningmoney = 5000
+const miningxp = 10000
+const miningmoney = 10000
 const mininglimit = 10
 const timeout = 3600000
 
@@ -26,7 +26,7 @@ let handler = async (m, { conn, usedPrefix, text }) => {
 					}, timeout)
 }
 handler.help = ['hadiah']
-handler.tags = ['rpgabsen']
+handler.tags = ['xp']
 handler.command = /^(hadiah)/i
 handler.owner = false
 handler.mods = false
