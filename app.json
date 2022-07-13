@@ -1,7 +1,7 @@
 {
-  "name": "FreeMD",
-  "description": "Lightweight WhatsApp Bot",
-  "repository": "https://github.com/Aiinne/FreeMD",
+  "name": "Netherworlds",
+  "description": "Netherworlds WhatsApp Bot",
+  "repository": "https://github.com/amarmyusup/Netherworlds.git",
   "logo": "https://node-js-sample.herokuapp.com/node.png",
   "keywords": ["bot", "whatsapp", "whatsapp-bot"],
   "buildpacks": [
