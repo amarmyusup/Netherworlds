@@ -17,7 +17,7 @@ let spotifyinfo = `✨️ *Title:* ${title}
   await conn.sendFile(m.chat, preview_mp3, 'spotify.mp3', spotifyinfo, m)
 }
 handler.help = ['spotify <query>']
-handler.tags = ['internet']
+handler.tags = ['Downloader']
 handler.command = /^(spotify|music)$/i
 // Made By github.com/amarmyusup
 module.exports = handler
