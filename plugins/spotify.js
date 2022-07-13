@@ -19,5 +19,5 @@ let spotifyinfo = `✨️ *Title:* ${title}
 handler.help = ['spotify <query>']
 handler.tags = ['internet']
 handler.command = /^(spotify|music)$/i
-// Made By github.com/TOXIC-DEVIL
+// Made By github.com/amarmyusup
 module.exports = handler
