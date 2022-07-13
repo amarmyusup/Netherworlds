@@ -24,13 +24,13 @@ ${hasil}
     m.reply(`Jadwal Sholat ${text}\n\n${json.data.string}`.trim())
 
 }
-handler.help = ['salat <daerah>']
+handler.help = ['sholat <daerah>']
 handler.tags = ['quran']
 handler.command = /^(jadwal)?s(a|o|ha|ho)lat$/i
 
 module.exports = handler*/
 
-const sholatAll = require('../lib/salat')
+const sholatAll = require('../lib/sholat')
 let axios = require('axios')
 let cheerio = require('cheerio')
 
@@ -55,7 +55,7 @@ let handler = async (m, { text, usedPrefix, command }) => {
 ├ ${json.data.isya} : Isya
 └──────────`.trim())
 }
-handler.help = ['jadwalsalat'].map(v => v + ' <kota>')
+handler.help = ['jadwalsholat'].map(v => v + ' <kota>')
 handler.tags = ['islami']
 handler.command = /^jadwal(salat|shalat|sholat)$/i
 handler.limit = true
@@ -67,7 +67,7 @@ const readMore = more.repeat(4001)
 
 function city() {
     return new Promise(async (resolve, reject) => {
-        let html = await (await axios.get('https://m.dream.co.id/jadwal-salat/ambon/')).data
+        let html = await (await axios.get('https://m.dream.co.id/jadwal-sholat/ambon/')).data
         $ = cheerio.load(html)
         let collect = []
         $('select > option').each(function (i, e) {
