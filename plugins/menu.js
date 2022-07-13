@@ -22,7 +22,6 @@ let tags = {
   'vote': 'Voting',
   'absen': 'Absen',
   'catatan': 'Catatan',
-  'jadian': 'Jadian',
   'islami': 'Islami',
   'owner': 'Owner',
   'advanced': 'Advanced',
