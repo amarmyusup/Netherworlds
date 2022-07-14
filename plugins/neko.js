@@ -1,4 +1,4 @@
-// xie hua piao piao batman membuka kulkas dan mngambil semangka lalu memberikan mayo di atas semangka
+// AMY
 
 let fetch = require('node-fetch')
 let handler = async(m, { conn }) => {
@@ -6,7 +6,7 @@ let handler = async(m, { conn }) => {
   if (!res.ok) throw await res.text()
   let json = await res.json()
   if (!json.url) throw 'Error!'
-  conn.sendFile(m.chat, json.url, '', 'Nyaa', m)
+  conn.sendFile(m.chat, json.url, '', '*©️AMY*', m)
 }
 handler.help = ['neko']
 handler.tags = ['internet']
