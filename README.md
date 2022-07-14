@@ -31,7 +31,7 @@ apt install nodejs -y
 apt install ffmpeg -y
 apt install imagemagick -y
 git clone https://github.com/amarmyusup/Netherworlds.git
-cd Aine-MD
+cd Netherworlds
 pkg install yarn
 yarn
 
