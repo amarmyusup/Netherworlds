@@ -22,7 +22,7 @@ let handler = async (m, { conn, text, usedPrefix }) => {
     return number.replace(/\s/g,'').replace(/([@+-])/g,'')
   }
 
-  if (!text) return conn.reply(m.chat, `*❏ GET NUMBER*\n\n• ${usedPrefix}unban number|days\n*Example:* ${usedPrefix}unban 6289654360447|99\n\n• ${usedPrefix}unban @tag|days\n*Example:* ${usedPrefix}unban @6289654360447|99`, m)
+  if (!text) return conn.reply(m.chat, `*❏ GET NUMBER*\n\n• ${usedPrefix}unban number|days\n*Example:* ${usedPrefix}unban 6285161011856|99\n\n• ${usedPrefix}unban @tag|days\n*Example:* ${usedPrefix}unban @6285161011856|99`, m)
   text = no(text) + "@s.whatsapp.net"
   global.db.data.users[text].banned = false
   global.db.data.users[text].bannedDate = 0
