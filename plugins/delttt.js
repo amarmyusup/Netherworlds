@@ -11,7 +11,7 @@ let handler = async (m, { conn, text }) => {
 		m.reply('rusak')
 	}
 }
-//BY RIZXYU
+//BY AMY
 handler.help = ['delttt']
 handler.tags = ['game']
 handler.command = /^(delttt|delsesittt|delsesitt)$/i
