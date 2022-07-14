@@ -1,7 +1,7 @@
 let fs = require('fs')
 const { MessageType } = require('@adiwajshing/baileys')
 let handler = async (m) => {
-let helloaine = fs.readFileSync('./mp3/botily.opus') 
+let hellobot = fs.readFileSync('./mp3/botily.opus') 
 conn.sendFile(m.chat, hellobot, '', '', m, true)
 }
 
