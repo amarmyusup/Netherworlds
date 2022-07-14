@@ -25,7 +25,7 @@ let handler = async (m, { conn }) => {
 "Hal membanggakan apa yang kamu dapatkan di tahun ini",
 "Siapa orang yang bisa membuatmu sange :v",
 "Sapa orang yang pernah buatmu sange",
-"(bgi yg muslim) pernah ga solat seharian?",
+"Pernah ga solat seharian?",
 "Siapa yang paling mendekati tipe pasangan idealmu di sini",
 "Suka mabar(main bareng)sama siapa?",
 "Pernah nolak orang? alasannya kenapa?",
