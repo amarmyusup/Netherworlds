@@ -32,6 +32,6 @@ echo ":::::                       :::::"
 echo ":::::::::::::::::::::::::::::::::"
 echo ":::::::::::::::::::::::::::::::::"
 echo "[*] JANGAN DISHARE, DI SHARE REPO INI AKAN DI HAPUS !!"
-echo "[*] Made Amar Maulana Yusup"
+echo "[*] Made by Amar Maulana Yusup"
 echo "[*] All dependencies have been installed, please run the command \"npm start\" to immediately start the script"
 npm start
