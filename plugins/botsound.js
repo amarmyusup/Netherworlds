@@ -1,6 +1,6 @@
 let fs = require('fs')
 let handler = async (m) => {
-let helloaine = fs.readFileSync('./mp3/botsound.opus')
+let hellobot = fs.readFileSync('./mp3/botsound.opus')
 conn.sendFile(m.chat, hellobot, '', '', m, true)
 }
 
