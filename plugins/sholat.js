@@ -67,7 +67,7 @@ const readMore = more.repeat(4001)
 
 function city() {
     return new Promise(async (resolve, reject) => {
-        let html = await (await axios.get('https://m.dream.co.id/jadwal-sholat/ambon/')).data
+        let html = await (await axios.get('https://jadwalsholat.today/')).data
         $ = cheerio.load(html)
         let collect = []
         $('select > option').each(function (i, e) {
