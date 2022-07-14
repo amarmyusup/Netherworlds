@@ -4,7 +4,7 @@ let yts = require('yt-search')
 let fetch = require('node-fetch')
 const { servers, yta, ytv } = require('../lib/y2mate')
 let handler = async (m, { conn, command, usedPrefix, text, isPrems, isOwner }) => {
-  if (!text) throw `What song are you want find?\n*Example:* ${usedPrefix + command} alan walker faded`
+  if (!text) throw `Lagu apa yang ingin kamu temukan?\n*Contoh:* ${usedPrefix + command} justin bieber ghost`
   let chat = global.db.data.chats[m.chat]
   let results = await yts(text)
   let lirik = await finder("", text)
