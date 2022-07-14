@@ -13,7 +13,7 @@ let handler = async(m, { conn }) => {
 🛰 *Source Url:* ${berita_url}`
    conn.sendButton(m.chat, sell, wm, berita_thumb, [['Tribun News', '.tribunnews']], m, {jpegThumbnail: await(await fetch(berita_thumb)).buffer()})
 }
-handler.help = ['tribunnews']
+handler.help = ['tribunnews|tribun']
 handler.tags = ['berita']
 handler.command = /^tribun(news)?$/i
 handler.limit = true
