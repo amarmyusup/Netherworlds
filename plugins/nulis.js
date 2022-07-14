@@ -2,7 +2,7 @@ let { format } = require('util')
 // let path = require('path')
 let { spawn } = require('child_process')
 
-// Font By MFarelS:V
+// Font By AMY
 let fontPath = 'src/font/Zahraaa.ttf'
 let handler = async (m, { conn, args }) => {
     if (!global.support.convert &&
@@ -56,7 +56,7 @@ let handler = async (m, { conn, args }) => {
     spawn(_spawnprocess, _spawnargs)
         .on('error', e => m.reply(format(e)))
         .on('close', () => {
-            conn.sendFile(m.chat, Buffer.concat(bufs), 'nulis.jpg', 'Hati² ketahuan:v', m)
+            conn.sendFile(m.chat, Buffer.concat(bufs), 'nulis.jpg', '*©️AMY*', m)
         })
         .stdout.on('data', chunk => bufs.push(chunk))
 }
