@@ -6,7 +6,7 @@ handler.all = async function (m, { isBlocked }) {
     if (isBlocked) return
 
 /* - - - - - - - - - - - - - - - - - - - - - - - - - - -  - - - - - - - - */
-/* - - - - - - - Ini autoresponder by aine - - - - - - - */
+/* - - - - - - - Ini autoresponder by AMY - - - - - - - */
 /* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - */
 
 let regs = /(aku cinta kamu)/i
@@ -29,7 +29,7 @@ let cintakamuh = cinmu[Math.floor(Math.random() * cinmu.length)]
     }
     
 /* - - - - - - - - - - - - - - - - - - - - - - - - - - -  - - - - - - - - */
-/* - - - - - - - Ini autoresponder by aine - - - - - - - */
+/* - - - - - - - Ini autoresponder by AMY - - - - - - - */
 /* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - */
 
     let regc = /(aku sayang kamu)/i
@@ -52,7 +52,7 @@ let sayangkamuh = saymu[Math.floor(Math.random() * saymu.length)]
     }
     
 /* - - - - - - - - - - - - - - - - - - - - - - - - - - -  - - - - - - - - */
-/* - - - - - - - Ini autoresponder by aine - - - - - - - */
+/* - - - - - - - Ini autoresponder by AMY - - - - - - - */
 /* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - */
 
     let regl = /(I love you|love you)/i
@@ -64,19 +64,19 @@ let sayangkamuh = saymu[Math.floor(Math.random() * saymu.length)]
 ]
 let loveyou = lovou[Math.floor(Math.random() * lovou.length)]
     if (isLoveYou && !m.fromMe) {
-    let helloaine = fs.readFileSync('./mp3/PTT-20211218-WA0243.opus') 
+    let helloaine = fs.readFileSync('./mp3/botily.opus') 
     conn.sendMessage(m.chat, {
         react: {
           text: `${loveyou}`,
           key: m.key,
         }})
    setTimeout(() => {
-        conn.sendFile(m.chat, helloaine, '', '', m, true)
+        conn.sendFile(m.chat, hellobot, '', '', m, true)
     }, 1000)
     }
     
 /* - - - - - - - - - - - - - - - - - - - - - - - - - - -  - - - - - - - - */
-/* - - - - - - - Ini autoresponder by aine - - - - - - - */
+/* - - - - - - - Ini autoresponder by AMY - - - - - - - */
 /* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - */
     
     let ass = /(assalamualaikum|assallamualaikum|assalamu\'alaikum|as\'salamualaikum)/i
@@ -88,7 +88,7 @@ let loveyou = lovou[Math.floor(Math.random() * lovou.length)]
 ]
 let assl = assal[Math.floor(Math.random() * assal.length)]
     if (isAss && !m.fromMe) {
-    let assalamualaikum = fs.readFileSync('./mp3/WhatsApp-Audio-2021-03-02-at-20.46.15.opus')
+    let assalamualaikum = fs.readFileSync('./mp3/botassalamualaikum.opus')
     conn.sendMessage(m.chat, {
         react: {
           text: `${assl}`,
@@ -100,26 +100,26 @@ let assl = assal[Math.floor(Math.random() * assal.length)]
     }
 
 /* - - - - - - - - - - - - - - - - - - - - - - - - - - -  - - - - - - - - */
-/* - - - - - - - Ini autoresponder by aine - - - - - - - */
+/* - - - - - - - Ini autoresponder by AMY - - - - - - - */
 /* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - */
     
-   /* let hiai = /(hi|hii|hiii|hi aine|hii aine|hiii aine|hy|halo|hallo|helo|hello|hy aine|halo aine|hallo aine|helo aine|hello aine)/i
+   /* let hiai = /(hi|hii|hiii|hi bot|hii bot|hiii bot|hy|halo|hallo|helo|hello|hy bot|halo bot|hallo bot|helo bot|hello bot)/i
     let isAih = hiai.exec(m.text)
     let hiain = [
 '🥰',
 '😇',
 '😅'
 ]
-let hiaine = hiain[Math.floor(Math.random() * hiain.length)]
+let hibot = hiain[Math.floor(Math.random() * hiain.length)]
     if (isAih && !m.fromMe) {
-    let helloaine = fs.readFileSync('./mp3/WhatsApp-Ptt-2021-07-14-at-18.12.33.opus') 
+    let hellobot = fs.readFileSync('./mp3/bothi.opus') 
     conn.sendMessage(m.chat, {
         react: {
-          text: `${hiaine}`,
+          text: `${hibot}`,
           key: m.key,
         }})
     setTimeout(() => {
-    conn.sendFile(m.chat, helloaine, '', '', m, true)
+    conn.sendFile(m.chat, hellobot, '', '', m, true)
     }, 1000)
     }*/
 
