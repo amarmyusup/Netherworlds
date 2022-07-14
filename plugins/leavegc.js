@@ -15,7 +15,7 @@
         await m.reply('Succes!!')
     } else {
         if (!m.isGroup) return global.dfail('group', m, conn)
-        await m.reply('Byee👋, Bot akan keluar dari group', m.chat) // WKWKW pesannya sama semua. gk kreatif :v
+        await m.reply('Byee👋, Bot akan keluar dari group', m.chat) //
         await conn.groupLeave(m.chat)
     }
 }
