@@ -5,7 +5,7 @@ let handler = async (m, { conn, args, usedPrefix, command }) => {
  let res = await zsExtract.extract(args[0])
  let { download, filename } = res
  m.reply(JSON.stringify(res, null, 2))
- m.reply('Mohon tunggu selama *5 menit* sedang mendownload file dari _zippyshare_\n\nMinimal File *100MB* jika lebih dari yang ditentukan, Aine tidak akan mengirimkan file..!!')
+ m.reply('Mohon tunggu selama *5 menit* sedang mendownload file dari _zippyshare_\n\nMinimal File *100MB* jika lebih dari yang ditentukan, tidak akan mengirimkan file..!!')
  conn.sendFile(m.chat, download, filename, filename, m)
 }
 handler.help = ['ippyshare'].map(v => 'z' + v + ' <url>')
