@@ -19,9 +19,9 @@ let handler = async function (m, { conn, text, usedPrefix }) {
   user.age = age
   user.regTime = + new Date
   user.registered = true
-  let expnye = global.db.data.users[m.sender].exp += 10000
+  let expnye = global.db.data.users[m.sender].exp += 15000
   let uang = global.db.data.users[m.sender].money += 20000
-  let limitnye = global.db.data.users[m.sender].limit += 20
+  let limitnye = global.db.data.users[m.sender].limit += 100
 // let nabungnye = global.db.data.users[m.sender].nabung += 100000
 // let banknye = global.db.data.users[m.sender].bank += 1000000
 // let petnye = global.db.data.users[m.sender].pet += 20
