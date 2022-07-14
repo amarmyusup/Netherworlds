@@ -1,5 +1,5 @@
 let handler = async (m, { conn, command, text }) => {
-  let type = command.replace(/^set(menu|help|\?)/, '').toLowerCase()
+  let type = command.replace(/^set(menu|help|list|\?)/, '').toLowerCase()
   if (type == '') {
     if (text) {
       conn.menu = text
@@ -21,7 +21,7 @@ let handler = async (m, { conn, command, text }) => {
 }
 handler.help = ['', 'before', 'header', 'body', 'footer', 'after'].map(v => 'setmenu' + v + ' <teks>')
 handler.tags = ['owner']
-handler.command = /^set(menu|help|\?)(before|header|body|footer|after)?$/i
+handler.command = /^set(menu|help|list|\?)(before|header|body|footer|after)?$/i
 handler.owner = true
 handler.mods = false
 handler.premium = false
