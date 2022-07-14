@@ -1,8 +1,8 @@
 const fetch = require('node-fetch')
 const { MessageType, MessageOptions, Mimetype } = require('@adiwajshing/baileys')
 let handler = async (m, { conn, args, usedPrefix, command }) => {
-await m.reply('*_Tunggu Sebentar Aine Sedang Memprosesnya..._*')
-let res = await fetch(`https://api.violetics.pw/api/downloader/sfile?apikey=DanzzBotzz&url=${args[0]}`)
+await m.reply('*_Tunggu Sebentar Bot Sedang Memprosesnya..._*')
+let res = await fetch(`https://api.violetics.pw/api/downloader/sfile?apikey=3e37-fc2a-7a82&url=${args[0]}`)
 let json = await res.json()
 if (!args[0]) throw `Link not found..\n\nExample:\n${usedPrefix}sfile https://sfile.mobi/1FjpfJwHxC07`
 // if (!args[0].match(/https:\/\/sfile.mobi\/)/gi)) throw `Link not found..\n\nExample:\n${usedPrefix}sfile https://sfile.mobi/1FjpfJwHxC07`
