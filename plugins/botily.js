@@ -5,7 +5,7 @@ let helloaine = fs.readFileSync('./mp3/botily.opus')
 conn.sendFile(m.chat, hellobot, '', '', m, true)
 }
 
-handler.customPrefix = /^(i love you|i ❤️ u|ily|bot ily|ily bot|love you|i love you bot|lopyu|lopyubot|i love u bot|love u|love u bot)$/i
+handler.customPrefix = /^(i love you|i ❤️ u|ily|bot ily|ily bot|love you|i love you bot|lopyu|lopyu bot|i love u bot|love u|love u bot)$/i
 handler.command = new RegExp
 
 handler.limit = true
