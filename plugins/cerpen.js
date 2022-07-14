@@ -1,5 +1,5 @@
 /*
-Made by Aine
+Made by AMY
 */
 
 let fetch = require('node-fetch')
