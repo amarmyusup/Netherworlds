@@ -1,6 +1,6 @@
 const { joox } = require('../lib/scrape')
 let handler = async (m, { conn, text, usedPrefix, command }) => {
-    if (!text) throw `*Perintah ini untuk mencari lagu joox berdasarkan pencarian*\n\ncontoh:\n${usedPrefix + command} akad`
+    if (!text) throw `*Perintah ini untuk mencari lagu joox berdasarkan pencarian*\n\ncontoh:\n${usedPrefix + command} hingga tua bersama`
     if (isUrl(text)) throw `*Perintah ini untuk mencari lagu joox berdasarkan pencarian bukan link*\n\ncontoh:\n${usedPrefix + command} akad`
 
     joox(text).then(res => {
@@ -15,7 +15,7 @@ let handler = async (m, { conn, text, usedPrefix, command }) => {
 *Album:* ${json.album}
 *Diterbitkan:* ${json.publish}
 *Link:* ${json.mp3}
-*Made by* ❤️`.trim()
+*©️AMY*`.trim()
         conn.sendFile(m.chat, json.img, 'error.jpg', pesan, m, false, { thumbnail: Buffer.alloc(0) })
         conn.sendFile(m.chat, json.mp3, 'error.mp3', '', m, false, { mimetype: 'audio/mp4' })
     })
@@ -47,7 +47,7 @@ let handler = async(m, { conn, text }) => {
     let json = await res.json()
     if (!json.status) throw json
     let { judul, artist, album, img_url, mp3_url, filesize, duration } = json.result
-capt = `*[ JOOX ]*\n\n▢ *Judul* : ${artist} - ${judul}\n▢ *Album* : ${album}\n▢ *Ukuran* : ${filesize}\n\n*Made by* ❤️`
+capt = `*[ JOOX ]*\n\n▢ *Judul* : ${artist} - ${judul}\n▢ *Album* : ${album}\n▢ *Ukuran* : ${filesize}\n\n*©️AMY*`
   await conn.sendFile(m.chat, img_url, '', capt, m)
   await conn.sendFile(m.chat, mp3_url, `${artist}.mp3`, capt, m, null, {
   asDocument: chat.useDocument, mimetype: 'audio/mp4'
